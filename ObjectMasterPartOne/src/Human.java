@@ -6,12 +6,11 @@ public class Human {
 	int health = 100;
 	
 	public int displayHealth() {
-		System.out.println("Your health is now " + this.health);
+//		System.out.println("Your health is now " + this.health);
 		return health;
 	}
 	
 	public void attackHuman(Human h) {
-		this.health = this.health - h.strength;
 		h.health = h.health - this.strength;
 		System.out.println("You attacked! " + " Your enemies health is now " + h.displayHealth());
 	}
